@@ -1,0 +1,28 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M-Pesa Payment</title>
+</head>
+<body>
+  <h1>M-Pesa Payment Integration</h1>
+  <!-- Payment form -->
+  <form id="paymentForm">
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="e.g. 254712345678">
+    <br><br>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" required placeholder="Enter amount">
+    <br><br>
+    <button type="submit">Pay Now</button>
+  </form>
+
+  <!-- Message container -->
+  <div id="message"></div>
+
+  <!-- Client-side JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
